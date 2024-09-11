@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="cv.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <h1>STATIC RESUME BUILDER BY ABDUL RAFAY</h1>
+    </nav>
+    <form id="resume">
+      <div class="field1">
+        <fieldset>
+          <legend>PERSONAL INFO:</legend>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required /><br />
+
+          <input type="text" name="email" id="email" placeholder="Enter your email" required /><br />
+
+          <input type="number" name="number" id="phone" placeholder="Enter your mobile number" required /><br />
+
+          <input type="date" name="dob" id="dob" placeholder="Enter your dob" required /><br />
+
+          <input type="file" name="profilepic" id="propic" class="pop" accept="image/*" required />
+        </fieldset>
+      </div>
+
+      <div class="field2">
+        <fieldset>
+          <legend>EDUCATION:</legend>
+  
+          <input type="text" name="school" id="school" placeholder="Enter your school name" required /><br />
+
+          <select name="degree" id="degree">
+            <option value="1">BS</option>
+            <option value="1">MBA</option>
+            <option value="1">BE</option>
+            <option value="1">Ph.D</option>
+            <option value="1">BA</option></select
+          ><br />
+
+          <textarea id="education" name="education" rows="3" placeholder="About your education"></textarea>
+        </fieldset>
+      </div>
+
+      <div class="field3">
+        <fieldset>
+          <legend>EXPERIENCE</legend>
+
+          <input type="text" name="jobname" id="jobname" placeholder="Enter your job" /><br />
+
+          <input type="text" name="comname" id="comname" placeholder="Enter your company" /><br />
+
+          <textarea id="exp" name="exp" rows="3" placeholder="Enter your experience"></textarea>
+        </fieldset>
+      </div>
+
+      <div class="field4">
+        <fieldset>
+          <legend>SKILLS:</legend>
+   
+          <textarea id="skill" name="skill" rows="3" placeholder="Enter your SKILLS"></textarea>
+        </fieldset>
+      </div>
+      <div class="btn">
+        <button type="submit">Generate now</button>
+      </div>
+    </form>
+
+
+  <div class="resumeoutput">
+
+  </div>
+
+    <script src="cv.js"></script>
+  </body>
+</html>

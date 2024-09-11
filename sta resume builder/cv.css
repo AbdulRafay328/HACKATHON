@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+:root{
+    --max-width : 80vw;
+}
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 12vh;
+    font-family: "Roboto", sans-serif;
+    padding: 2%;
+}
+.field1 , .field2 , .field3 , .field4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    
+}
+.field1 fieldset , .field2 fieldset , .field3 fieldset , .field4 fieldset{
+    width: var(--max-width);
+    background-color: grey;
+    border-radius: 5px;
+    margin: 1%;
+    color: white;
+    height: 41vh;
+}
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 1%;
+    border-radius: 10px;
+    width: 59vw;
+    height: 7vh;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+#resume {
+    box-shadow: 0px 10px 30px white;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    height:184vh;
+    width: 70vw;
+    margin-left: 15%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.field1 fieldset legend , .field2 fieldset legend , .field3 fieldset legend , .field4 fieldset legend{
+    margin-left: 3%;
+    margin-bottom: 1%;
+
+}
+.field1 input , .field2 input , .field3 input{
+    margin: 3px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 35vw;
+    margin-left: 12vw;
+}
+.field2 select{
+    margin: 3px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 35vw;
+    margin-left: 12vw;
+}
+.field2 textarea , .field3 textarea {
+    margin: 3px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 35vw;
+    margin-left: 12vw;
+}
+.field4 textarea{
+    margin: 3px;
+    padding: 1%;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 35vw;
+    margin-left: 12vw;
+    height: 23vh;
+}
+.resumeoutput{
+    width: 66vw;
+    background-color: grey;
+    border-radius: 5px;
+    margin: 1%;
+    color: white;
+    height: 32vh;
+    margin-left: 18%;
+}
